@@ -6,104 +6,211 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>API Reference</title>
 
-    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
-    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
     <style>
       .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
-.highlight, .highlight .w {
-  color: #f8f8f2;
-  background-color: #272822;
-}
-.highlight .err {
-  color: #151515;
-  background-color: #ac4142;
-}
-.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
-  color: #505050;
-}
-.highlight .cp {
-  color: #f4bf75;
-}
-.highlight .nt {
-  color: #f4bf75;
-}
-.highlight .o, .highlight .ow {
-  color: #d0d0d0;
-}
-.highlight .p, .highlight .pi {
-  color: #d0d0d0;
-}
-.highlight .gi {
-  color: #90a959;
-}
-.highlight .gd {
-  color: #ac4142;
-}
 .highlight .gh {
-  color: #6a9fb5;
-  background-color: #151515;
-  font-weight: bold;
-}
-.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
-  color: #aa759f;
-}
-.highlight .kc {
-  color: #d28445;
-}
-.highlight .kt {
-  color: #d28445;
-}
-.highlight .kd {
-  color: #d28445;
-}
-.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
-  color: #90a959;
+  color: #999999;
 }
 .highlight .sr {
-  color: #75b5aa;
+  color: #f6aa11;
 }
-.highlight .si {
-  color: #8f5536;
+.highlight .go {
+  color: #888888;
 }
-.highlight .se {
-  color: #8f5536;
+.highlight .gp {
+  color: #555555;
 }
-.highlight .nn {
-  color: #f4bf75;
+.highlight .gs {
 }
-.highlight .nc {
-  color: #f4bf75;
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
 }
 .highlight .no {
-  color: #f4bf75;
+  color: #66d9ef;
 }
-.highlight .na {
-  color: #6a9fb5;
+.highlight .kt {
+  color: #66d9ef;
 }
-.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
-  color: #90a959;
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
 }
 .highlight .ss {
-  color: #90a959;
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
 }
     </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
       <script src="javascripts/all.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;]">
+  <body class="index" data-languages="[&quot;shell&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
-        <img src="images/navbar.png" />
+        <img src="images/navbar.png" alt="Navbar" />
       </span>
     </a>
     <div class="tocify-wrapper">
-      <img src="images/logo.png" />
+      <img src="images/logo.png" alt="Logo" />
         <div class="lang-selector">
               <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="ruby">ruby</a>
-              <a href="#" data-language-name="python">python</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -112,8 +219,7 @@
       <div id="toc">
       </div>
         <ul class="toc-footer">
-            <li><a href='#'>Sign Up for a Developer Key</a></li>
-            <li><a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a></li>
+            <li><a href='https://excellentbeliever.com'>Documentation Powered by Exbel</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
@@ -121,165 +227,400 @@
       <div class="content">
         <h1 id="introduction">Introduction</h1>
 
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
-
-<p>We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
-
-<p>This example API documentation page was created with <a href="https://github.com/tripit/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&rsquo;s documentation.</p>
+<p>Welcome to the Exbel API! You can use our API to access Excellent Believer API endpoints, which can get information on readings of a user in our database.</p>
 
 <h1 id="authentication">Authentication</h1>
 
 <blockquote>
 <p>To authorize, use this code:</p>
 </blockquote>
-<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct params with each request</span>
+curl <span class="s2">"http://excellantbeliever.com/api/v1/user/login"</span>
+  -F user_details[:email]<span class="o">=</span><span class="s1">'teset@test.com'</span>
+  -F user_details[:password]<span class="o">=</span><span class="s1">'password'</span>
 </code></pre>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre>
-<pre class="highlight shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre>
-
-<blockquote>
-<p>Make sure to replace <code class="prettyprint">meowmeowmeow</code> with your API key.</p>
-</blockquote>
-
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
-
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
-
-<p><code class="prettyprint">Authorization: meowmeowmeow</code></p>
-
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-
-<h1 id="kittens">Kittens</h1>
-
-<h2 id="get-all-kittens">Get All Kittens</h2>
-<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
-</code></pre>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
-</code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre>
-
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
 </blockquote>
-<pre class="highlight json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="err">auth_token</span><span class="p">:</span><span class="w"> </span><span class="err">'osdjgfousjgoujasog</span><span class="mi">1204</span><span class="err">u</span><span class="mi">0</span><span class="err">u</span><span class="mi">32</span><span class="err">wejf</span><span class="mi">314</span><span class="err">o</span><span class="mi">0</span><span class="err">sdij'</span><span class="p">,</span><span class="w">
+  </span><span class="err">msg</span><span class="p">:</span><span class="w"> </span><span class="s2">"Successfully authenticated. Welcome Roman!"</span><span class="p">,</span><span class="w">
+  </span><span class="err">status</span><span class="p">:</span><span class="w"> </span><span class="err">'success'</span><span class="w">
+</span><span class="p">}</span><span class="w">
 </span></code></pre>
-
-<p>This endpoint retrieves all kittens.</p>
-
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET http://example.com/api/kittens</code></p>
+<p><code class="prettyprint">POST http://excellantbeliever.com/api/v1/user/login</code></p>
 
 <h3 id="query-parameters">Query Parameters</h3>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
-<th>Default</th>
+<th>required</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
+<td>user_details[:email]</td>
+<td>true</td>
+<td>Needed for all types of login(ie, facebook, google, email-password)</td>
 </tr>
 <tr>
-<td>available</td>
-<td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
+<td>user_details[:uid]</td>
+<td>false</td>
+<td>Should be sent for google &amp; facebook login</td>
+</tr>
+<tr>
+<td>user_details[:password]</td>
+<td>false</td>
+<td>Should be sent for email-password login</td>
 </tr>
 </tbody></table>
 
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
+<p>ExcellantBeliever uses API keys to allow access to the API. It expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
+
+<p><code class="prettyprint">Authorization: Bearer osdjgfousjgoujasog1204u0u32wejf314o0sdij</code></p>
+
+<aside class="notice">
+You must replace <code>osdjgfousjgoujasog1204u0u32wejf314o0sdij</code> with your personal API key.
 </aside>
 
-<h2 id="get-a-specific-kitten">Get a Specific Kitten</h2>
-<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<h1 id="user-registration">User Registration</h1>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<blockquote>
+<p>To authorize, use this code:</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct params with each request</span>
+curl <span class="s2">"http://excellantbeliever.com/api/v1/user/register"</span>
+  -F <span class="nv">name</span><span class="o">=</span><span class="s1">'teset'</span>
+  -F <span class="nv">email</span><span class="o">=</span><span class="s1">'teset@test.com'</span>
+  -F <span class="nv">password</span><span class="o">=</span><span class="s1">'password'</span>
 </code></pre>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre>
-
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
 </blockquote>
-<pre class="highlight json"><code><span class="p">{</span><span class="w">
-  </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="err">msg</span><span class="p">:</span><span class="w"> </span><span class="err">'Welcome!</span><span class="w"> </span><span class="err">You</span><span class="w"> </span><span class="err">have</span><span class="w"> </span><span class="err">signed</span><span class="w"> </span><span class="err">up</span><span class="w"> </span><span class="err">successfully.</span><span class="w"> </span><span class="err">Please</span><span class="w"> </span><span class="err">confirm</span><span class="w"> </span><span class="err">your</span><span class="w"> </span><span class="err">registration</span><span class="w"> </span><span class="err">by</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">confirmation</span><span class="w"> </span><span class="err">link</span><span class="w"> </span><span class="err">you</span><span class="w"> </span><span class="err">have</span><span class="w"> </span><span class="err">received</span><span class="w"> </span><span class="err">via</span><span class="w"> </span><span class="err">email.'</span><span class="w">
+  </span><span class="err">status</span><span class="p">:</span><span class="w"> </span><span class="err">'success'</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-
-<p>This endpoint retrieves a specific kitten.</p>
-
-<aside class="warning">Inside HTML code blocks like this one, you can&rsquo;t use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
-
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET http://example.com/kittens/&lt;ID&gt;</code></p>
+<p><code class="prettyprint">POST http://excellantbeliever.com/api/v1/user/register</code></p>
 
-<h3 id="url-parameters">URL Parameters</h3>
+<h3 id="query-parameters">Query Parameters</h3>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>required</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>ID</td>
-<td>The ID of the kitten to retrieve</td>
+<td>email</td>
+<td>true</td>
+<td>should be a valid email id</td>
+</tr>
+<tr>
+<td>name</td>
+<td>true</td>
+<td>can alpha numeric</td>
+</tr>
+<tr>
+<td>password</td>
+<td>true</td>
+<td>Should be 6 chars min</td>
 </tr>
 </tbody></table>
 
+<p>This creates a user in excellant believer app. But the user has to be confirmed. </p>
+
+<h1 id="readings">Readings</h1>
+
+<h2 id="get-all-readings-for-the-user">Get All readings for the user</h2>
+<pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
+curl <span class="s2">"http://excellantbeliever.com/api/v1/readings"</span>
+  -H <span class="s2">"Authorization: Bearer osdjgfousjgoujasog1204u0u32wejf314o0sdij"</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"readings"</span><span class="err">=&gt;</span><span class="w">
+  </span><span class="p">{</span><span class="s2">"Jude"</span><span class="err">=&gt;</span><span class="w">
+    </span><span class="p">{</span><span class="s2">"readings"</span><span class="err">=&gt;</span><span class="w">
+      </span><span class="p">[{</span><span class="s2">"id"</span><span class="err">=&gt;</span><span class="mi">98</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"chapter_id"</span><span class="err">=&gt;</span><span class="mi">5877</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"user_id"</span><span class="err">=&gt;</span><span class="mi">8</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"created_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24T10:47:41.501Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"updated_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24T10:47:41.501Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"date_read"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24"</span><span class="p">}],</span><span class="w">
+     </span><span class="s2">"book_id"</span><span class="err">=&gt;</span><span class="mi">52</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"completed"</span><span class="err">=&gt;</span><span class="mf">20.0</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"last_read"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24T10:47:41.501Z"</span><span class="p">},</span><span class="w">
+   </span><span class="s2">"Genesis"</span><span class="err">=&gt;</span><span class="w">
+    </span><span class="p">{</span><span class="s2">"readings"</span><span class="err">=&gt;</span><span class="w">
+      </span><span class="p">[{</span><span class="s2">"id"</span><span class="err">=&gt;</span><span class="mi">99</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"chapter_id"</span><span class="err">=&gt;</span><span class="mi">4015</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"user_id"</span><span class="err">=&gt;</span><span class="mi">8</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"created_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24T10:48:51.829Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"updated_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24T10:48:51.829Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"date_read"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24"</span><span class="p">},</span><span class="w">
+       </span><span class="p">{</span><span class="s2">"id"</span><span class="err">=&gt;</span><span class="mi">50</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"chapter_id"</span><span class="err">=&gt;</span><span class="mi">3971</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"user_id"</span><span class="err">=&gt;</span><span class="mi">8</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"created_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-22T12:58:29.180Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"updated_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-22T12:58:29.180Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"date_read"</span><span class="err">=&gt;</span><span class="s2">"2017-05-22"</span><span class="p">}],</span><span class="w">
+     </span><span class="s2">"book_id"</span><span class="err">=&gt;</span><span class="mi">1</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"completed"</span><span class="err">=&gt;</span><span class="mf">34.17</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"last_read"</span><span class="err">=&gt;</span><span class="s2">"2017-05-30T10:46:52.759Z"</span><span class="p">},</span><span class="w">
+   </span><span class="s2">"Exodus"</span><span class="err">=&gt;</span><span class="w">
+    </span><span class="p">{</span><span class="s2">"readings"</span><span class="err">=&gt;</span><span class="w">
+      </span><span class="p">[{</span><span class="s2">"id"</span><span class="err">=&gt;</span><span class="mi">106</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"chapter_id"</span><span class="err">=&gt;</span><span class="mi">4089</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"user_id"</span><span class="err">=&gt;</span><span class="mi">8</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"created_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24T11:21:54.327Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"updated_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24T11:21:54.327Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"date_read"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24"</span><span class="p">},</span><span class="w">
+       </span><span class="p">{</span><span class="s2">"id"</span><span class="err">=&gt;</span><span class="mi">107</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"chapter_id"</span><span class="err">=&gt;</span><span class="mi">4090</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"user_id"</span><span class="err">=&gt;</span><span class="mi">8</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"created_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24T11:22:02.956Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"updated_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24T11:22:02.956Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"date_read"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24"</span><span class="p">},</span><span class="w">
+       </span><span class="p">{</span><span class="s2">"id"</span><span class="err">=&gt;</span><span class="mi">108</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"chapter_id"</span><span class="err">=&gt;</span><span class="mi">4092</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"user_id"</span><span class="err">=&gt;</span><span class="mi">8</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"created_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24T11:32:01.135Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"updated_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24T11:32:01.135Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"date_read"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24"</span><span class="p">}],</span><span class="w">
+     </span><span class="s2">"book_id"</span><span class="err">=&gt;</span><span class="mi">2</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"completed"</span><span class="err">=&gt;</span><span class="mf">28.11</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"last_read"</span><span class="err">=&gt;</span><span class="s2">"2017-05-30T10:47:07.971Z"</span><span class="p">},</span><span class="w">
+   </span><span class="s2">"Esther"</span><span class="err">=&gt;</span><span class="w">
+    </span><span class="p">{</span><span class="s2">"readings"</span><span class="err">=&gt;</span><span class="w">
+      </span><span class="p">[{</span><span class="s2">"id"</span><span class="err">=&gt;</span><span class="mi">76</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"chapter_id"</span><span class="err">=&gt;</span><span class="mi">4536</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"user_id"</span><span class="err">=&gt;</span><span class="mi">8</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"created_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-23T13:22:22.105Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"updated_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-23T13:22:22.105Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"date_read"</span><span class="err">=&gt;</span><span class="s2">"2017-05-23"</span><span class="p">}],</span><span class="w">
+     </span><span class="s2">"book_id"</span><span class="err">=&gt;</span><span class="mi">14</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"completed"</span><span class="err">=&gt;</span><span class="mf">50.0</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"last_read"</span><span class="err">=&gt;</span><span class="s2">"2017-05-23T13:22:22.105Z"</span><span class="p">},</span><span class="w">
+   </span><span class="s2">"Ruth"</span><span class="err">=&gt;</span><span class="w">
+    </span><span class="p">{</span><span class="s2">"readings"</span><span class="err">=&gt;</span><span class="w">
+      </span><span class="p">[{</span><span class="s2">"id"</span><span class="err">=&gt;</span><span class="mi">96</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"chapter_id"</span><span class="err">=&gt;</span><span class="mi">4444</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"user_id"</span><span class="err">=&gt;</span><span class="mi">8</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"created_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24T10:38:49.976Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"updated_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24T10:38:49.976Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"date_read"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24"</span><span class="p">}],</span><span class="w">
+     </span><span class="s2">"book_id"</span><span class="err">=&gt;</span><span class="mi">8</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"completed"</span><span class="err">=&gt;</span><span class="mf">12.5</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"last_read"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24T10:38:49.976Z"</span><span class="p">},</span><span class="w">
+   </span><span class="s2">"Leviticus"</span><span class="err">=&gt;</span><span class="w">
+    </span><span class="p">{</span><span class="s2">"readings"</span><span class="err">=&gt;</span><span class="w">
+      </span><span class="p">[{</span><span class="s2">"id"</span><span class="err">=&gt;</span><span class="mi">158</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"chapter_id"</span><span class="err">=&gt;</span><span class="mi">4274</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"user_id"</span><span class="err">=&gt;</span><span class="mi">8</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"created_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24T16:26:41.104Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"updated_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24T16:26:41.104Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"date_read"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24"</span><span class="p">},</span><span class="w">
+       </span><span class="p">{</span><span class="s2">"id"</span><span class="err">=&gt;</span><span class="mi">159</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"chapter_id"</span><span class="err">=&gt;</span><span class="mi">4275</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"user_id"</span><span class="err">=&gt;</span><span class="mi">8</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"created_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24T16:27:23.022Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"updated_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24T16:27:23.022Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"date_read"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24"</span><span class="p">},</span><span class="w">
+       </span><span class="p">{</span><span class="s2">"id"</span><span class="err">=&gt;</span><span class="mi">160</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"chapter_id"</span><span class="err">=&gt;</span><span class="mi">4276</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"user_id"</span><span class="err">=&gt;</span><span class="mi">8</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"created_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24T16:27:26.878Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"updated_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24T16:27:26.878Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"date_read"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24"</span><span class="p">}],</span><span class="w">
+     </span><span class="s2">"book_id"</span><span class="err">=&gt;</span><span class="mi">3</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"completed"</span><span class="err">=&gt;</span><span class="mf">39.06</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"last_read"</span><span class="err">=&gt;</span><span class="s2">"2017-05-24T16:45:28.288Z"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves all readings of the user.</p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET http://excellantbeliever.com/api/v1/readings</code></p>
+
+<aside class="success">
+Remember — you must send auth_token in the header for this request
+</aside>
+
+<h2 id="get-all-readings-from-a-specific-book">Get all readings from a Specific Book</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://excellantbeliever.com/api/v1/readings/1"</span>
+  -H <span class="s2">"Authorization: Bearer meowmeowmeow"</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+</span><span class="s2">"read_chapters"</span><span class="err">=&gt;</span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="s2">"id"</span><span class="err">=&gt;</span><span class="mi">4088</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="err">=&gt;</span><span class="s2">"Exodus"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"book_id"</span><span class="err">=&gt;</span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"chapter"</span><span class="err">=&gt;</span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"chapter_index"</span><span class="err">=&gt;</span><span class="mi">2002</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"created_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-02T07:08:37.639Z"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"updated_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-02T07:08:37.642Z"</span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="s2">"id"</span><span class="err">=&gt;</span><span class="mi">4089</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="err">=&gt;</span><span class="s2">"Exodus"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"book_id"</span><span class="err">=&gt;</span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"chapter"</span><span class="err">=&gt;</span><span class="mi">3</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"chapter_index"</span><span class="err">=&gt;</span><span class="mi">2003</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"created_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-02T07:08:37.639Z"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"updated_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-02T07:08:37.642Z"</span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="s2">"id"</span><span class="err">=&gt;</span><span class="mi">4090</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="err">=&gt;</span><span class="s2">"Exodus"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"book_id"</span><span class="err">=&gt;</span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"chapter"</span><span class="err">=&gt;</span><span class="mi">4</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"chapter_index"</span><span class="err">=&gt;</span><span class="mi">2004</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"created_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-02T07:08:37.639Z"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"updated_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-02T07:08:37.642Z"</span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="s2">"id"</span><span class="err">=&gt;</span><span class="mi">4091</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="err">=&gt;</span><span class="s2">"Exodus"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"book_id"</span><span class="err">=&gt;</span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"chapter"</span><span class="err">=&gt;</span><span class="mi">5</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"chapter_index"</span><span class="err">=&gt;</span><span class="mi">2005</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"created_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-02T07:08:37.639Z"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"updated_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-02T07:08:37.642Z"</span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="s2">"id"</span><span class="err">=&gt;</span><span class="mi">4092</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="err">=&gt;</span><span class="s2">"Exodus"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"book_id"</span><span class="err">=&gt;</span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"chapter"</span><span class="err">=&gt;</span><span class="mi">6</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"chapter_index"</span><span class="err">=&gt;</span><span class="mi">2006</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"created_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-02T07:08:37.639Z"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"updated_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-02T07:08:37.642Z"</span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<p>This endpoint retrieves all readings for the current user in specified book.</p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST http://excellantbeliever.com/api/v1/readings</code></p>
+
+<h2 id="create-a-reading-for-the-user">Create a reading for the user</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://excellantbeliever.com/api/v1/readings"</span>
+  -H <span class="s2">"Authorization: Bearer meowmeowmeow"</span>
+  -F <span class="nv">book_id</span><span class="o">=</span>23
+  -F <span class="nv">chapter</span><span class="o">=</span>5
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"reading"</span><span class="err">=&gt;</span><span class="w">
+  </span><span class="p">{</span><span class="s2">"id"</span><span class="err">=&gt;</span><span class="mi">241</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"user_id"</span><span class="err">=&gt;</span><span class="mi">8</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"chapter_id"</span><span class="err">=&gt;</span><span class="mi">4087</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"created_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-31T13:30:08.087Z"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"updated_at"</span><span class="err">=&gt;</span><span class="s2">"2017-05-31T13:30:08.087Z"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"date_read"</span><span class="err">=&gt;</span><span class="s2">"2017-05-31"</span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>book_id</td>
+<td>true</td>
+<td>must be numeric</td>
+</tr>
+<tr>
+<td>chapter</td>
+<td>true</td>
+<td>must be numeric</td>
+</tr>
+</tbody></table>
+
+<p>This endpoint creates a reading for the user in given book and chapter.</p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST http://excellantbeliever.com/api/v1/readings</code></p>
+
+<h2 id="destroy-a-reading-for-the-user">Destroy a reading for the user</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://excellantbeliever.com/api/v1/readings/destroy"</span>
+  -H <span class="s2">"Authorization: Bearer meowmeowmeow"</span>
+  -F <span class="nv">book_id</span><span class="o">=</span>23
+  -F <span class="nv">chapter</span><span class="o">=</span>5
+</code></pre>
+<blockquote>
+<p>The above command returns a http status 204.</p>
+</blockquote>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>book_id</td>
+<td>true</td>
+<td>must be numeric</td>
+</tr>
+<tr>
+<td>chapter</td>
+<td>true</td>
+<td>must be numeric</td>
+</tr>
+</tbody></table>
+
+<p>This endpoint destroy the reading for the user in given book and chapter.</p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST http://excellantbeliever.com/api/v1/readings/destroy</code></p>
+
+<h2 id="retrive-reading-statistics-of-the-user">Retrive reading statistics of the user</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://excellantbeliever.com/api/v1/readings/my_stats"</span>
+  -H <span class="s2">"Authorization: Bearer meowmeowmeow"</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"stats"</span><span class="err">=&gt;</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"total_reading"</span><span class="err">=&gt;</span><span class="mi">73</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"total_remaining"</span><span class="err">=&gt;</span><span class="mi">1910</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"complete_percent"</span><span class="err">=&gt;</span><span class="mf">3.7</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"remaining_percent"</span><span class="err">=&gt;</span><span class="mf">96.3</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"days_to_complete"</span><span class="err">=&gt;</span><span class="s2">"about 2 years"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<p>This endpoint destroy the reading for the user in given book and chapter.</p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p>`GET http://excellantbeliever.com/api/v1/readings/my_stats</p>
+
           <h1 id="errors">Errors</h1>
 
-<aside class="notice">This error section is stored in a separate file in `includes/_errors.md`. Slate allows you to optionally separate out your docs into many files&hellip;just save them to the `includes` folder and add them to the top of your `index.md`&rsquo;s frontmatter. Files are included in the order listed.</aside>
+<aside class="notice">This error section is stored in a separate file in `includes/_errors.md`. Slate allows you to optionally separate out your docs into many files&hellip;just save them to the `includes` folder and add them to the top of your `index.md`&lsquo;s frontmatter. Files are included in the order listed.</aside>
 
 <p>The Kittn API uses the following error codes:</p>
 
@@ -331,7 +672,7 @@ Remember — a happy kitten is an authenticated kitten!
 </tr>
 <tr>
 <td>503</td>
-<td>Service Unavailable &ndash; We&rsquo;re temporarially offline for maintanance. Please try again later.</td>
+<td>Service Unavailable &ndash; We&rsquo;re temporarily offline for maintenance. Please try again later.</td>
 </tr>
 </tbody></table>
 
@@ -339,8 +680,6 @@ Remember — a happy kitten is an authenticated kitten!
       <div class="dark-box">
           <div class="lang-selector">
                 <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="ruby">ruby</a>
-                <a href="#" data-language-name="python">python</a>
           </div>
       </div>
     </div>
